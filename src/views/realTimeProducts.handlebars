@@ -12,23 +12,20 @@
 </form>
 
 <ul class="products_list" id="product_list">
-    {{#each products}}
-    <li id="{{this.id}}">
-        <div style="display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    <div class="container" style="display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     color: rgb(0, 0, 0);
-    margin-top: 3%;
-    background-color: rgb(201, 195, 195);
-    width: 15%;
-    border-radius: 10px;
-    text-align: center;
-    padding-bottom: 1%;
-    margin-right: 3%;">
-            <p>{{this.title}}</p>
-            <button onclick="deleteProductWithSocket('{{this.id}}')">Delete</button>
-        </div>
-    </li>
-    {{/each}}
+    ">
+        {{#each products}}
+        <li id="{{this.id}}" style="margin:1%;background-color: rgb(201, 195, 195);padding:1%; 
+    border-radius: 10px ">
+            <div>
+                <p>{{this.title}}</p>
+                <button onclick="deleteProductWithSocket('{{this.id}}')">Delete</button>
+            </div>
+        </li>
+        {{/each}}
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/static/js/index.js"></script>

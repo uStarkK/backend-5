@@ -11,36 +11,6 @@
         "category": "clothes"
     },
     {
-        "title": "Camioneta",
-        "price": 325,
-        "code": "kas",
-        "desc": "A big Camioneta toy",
-        "status": true,
-        "stock": 10,
-        "category": "toys",
-        "id": 7
-    },
-    {
-        "title": "Taza",
-        "price": 35,
-        "code": "kaz",
-        "desc": "A beautiful looking Taza",
-        "stock": 10,
-        "category": "daily",
-        "status": true,
-        "id": 8
-    },
-    {
-        "title": "Botella",
-        "price": 35,
-        "code": "kap",
-        "desc": "A beautiful looking Botella",
-        "stock": 10,
-        "category": "daily",
-        "status": true,
-        "id": 9
-    },
-    {
         "title": "Esponja",
         "price": 320,
         "thumbnail": "url.com/url",
@@ -79,5 +49,60 @@
         "desc": "Cebollita",
         "price": "99",
         "id": 7
+    },
+    {
+        "title": "Camioneta",
+        "price": 325,
+        "code": "kas",
+        "desc": "A big Camioneta toy",
+        "status": true,
+        "stock": 10,
+        "category": "toys",
+        "id": 8
+    },
+    {
+        "title": "Taza",
+        "price": 35,
+        "code": "kaz",
+        "desc": "A beautiful looking Taza",
+        "stock": 10,
+        "category": "daily",
+        "status": true,
+        "id": 9
+    },
+    {
+        "title": "Botella",
+        "price": 35,
+        "code": "kap",
+        "desc": "A beautiful looking Botella",
+        "stock": 10,
+        "category": "daily",
+        "status": true,
+        "id": 10
+    },
+    
+    {
+        "title": "Cebolla",
+        "desc": "Cebollita",
+        "price": "99",
+        "id": 11
+    },
+    {
+        "title": "Cebolla",
+        "desc": "Cebollita",
+        "price": "99",
+        "id": 12
+    },
+    {
+        "title": "Cebolla",
+        "desc": "Cebollita",
+        "price": "99",
+        "id": 13
+    },
+    {
+        "title": "Cebolla",
+        "desc": "Cebollita",
+        "price": "99",
+        "id": 14
     }
 ]
