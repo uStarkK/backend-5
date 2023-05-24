@@ -1,5 +1,5 @@
 const productForm = document.getElementById('product-form');
-
+const socket = io()
 const productListContainer = document.getElementById('product_list')
 
 function deleteProductWithSocket(id) {
@@ -48,17 +48,17 @@ try {
 
     productForm.addEventListener("submit", (event) => {
         event.preventDefault();
-        const title = form.elements.title.value;
-        const description = form.elements.description.value;
-        const price = form.elements.price.value;
+        const title = document.getElementById('title').value;
+        const desc = document.getElementById('description').value;
+        const price = document.getElementById('price').value;
 
         const newProduct = {
             title,
-            description,
+            desc,
             price
         }
         console.log(newProduct);
-        socket.emit("new-product", newProduct);
+        socket.emit("product:create", newProduct);
         productForm.reset()
     });
 } catch (error) { }

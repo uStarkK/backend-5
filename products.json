@@ -73,5 +73,11 @@
         "stock": 10,
         "category": "toys",
         "id": 6
+    },
+    {
+        "title": "Cebolla",
+        "desc": "Cebollita",
+        "price": "99",
+        "id": 7
     }
 ]
