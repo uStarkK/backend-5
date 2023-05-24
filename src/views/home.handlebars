@@ -1,0 +1,37 @@
+<div>
+    <h1>Bienvenido a la lista de productos!</h1>
+    {{#if products}}
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+        {{#each products}}
+        <div style="display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    margin-top: 3%;
+    background-color: rgb(201, 195, 195);
+    width: 15%;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 1%;
+    margin-right: 3%;">
+            <div>
+                <h1>
+                    {{this.title}}
+                </h1>
+                <h2>
+                    ${{this.price}} -
+                </h2>
+                <h2>
+                    "{{this.desc}}"
+                </h2>
+                <h2>
+                    Stock:{{this.stock}}
+                </h2>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{else}}
+    No hay ningun producto cargado
+    {{/if}}
+</div>
