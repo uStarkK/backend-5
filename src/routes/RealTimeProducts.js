@@ -1,7 +1,6 @@
 import express from 'express';
-import { ProductManager } from '../class.js';
+import { ProductsModel } from '../DAO/models/products.model.js';
 
-const data = new ProductManager("./products.json")
 export const realTimeProducts = express.Router();
 
 
@@ -9,6 +8,9 @@ export const realTimeProducts = express.Router();
 
 
 realTimeProducts.get('/', async (req, res) => {
-    const products = await data.getAll()
-    res.render('realTimeProducts', {products})
+    try{const products = await ProductsModel.find({}).lean().exec()
+    return res.status(200).render("realTimeProducts", {products})
+    }catch(err){
+        console.log("error")
+    }
 })
